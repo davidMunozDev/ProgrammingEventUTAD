@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Programación U-tad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="https://st1.u-tad.com/media/2020/06/logo_utad.png" alt="Logo U-tad">
+    <div class="header-info">
+        <h1>Evento de Programación U-tad</h1>
+        <p>Fecha: 25 de febrero de 2025 | Ubicación: Campus U-tad, Madrid</p>
+    </div>
+</header>
+
+<main class="main-content">
+    <section class="section">
+        <h2>Introducción</h2>
+        <p>El Evento de Programación U-tad reunirá a expertos en el área para ofrecer charlas y talleres sobre las últimas tendencias y tecnologías en programación. Los asistentes podrán participar en sesiones prácticas y aprender de los mejores ponentes en el campo.</p>
+    </section>
+
+    <section class="section">
+        <h2>Agenda del Evento</h2>
+        <table class="agenda-table">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Ponente</th>
+                    <th>Título</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Juan Pérez</td>
+                    <td class="session-title">Introducción a la Inteligencia Artificial</td>
+                </tr>
+                <tr>
+                    <td>11:15 - 12:15</td>
+                    <td>Maria Gómez</td>
+                    <td class="session-title">Desarrollo de Apps Móviles</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 13:30</td>
+                    <td>Carlos López</td>
+                    <td class="session-title">Optimización de Algoritmos en Python</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>Registro</h2>
+        <form class="form-container" action="#" method="post">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="charlas">Selección de Charlas/Talleres</label>
+            <select id="charlas" name="charlas" multiple required>
+                <option value="ia">Introducción a la Inteligencia Artificial</option>
+                <option value="apps">Desarrollo de Apps Móviles</option>
+                <option value="algoritmos">Optimización de Algoritmos en Python</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Para más detalles, contacta a <a href="mailto:info@u-tad.com">info@u-tad.com</a></p>
+    <p>Síguenos en nuestras redes sociales: 
+        <a href="https://twitter.com/U_tad" target="_blank">Twitter</a> | 
+        <a href="https://es-es.facebook.com/utadcentrouniversitario" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com/u_tad/" target="_blank">Instagram</a> | 
+        <a href="https://www.linkedin.com/school/u-tad//" target="_blank">Linked In</a> | 
+        <a href="https://www.youtube.com/user/UniversidadUTAD" target="_blank">You tube</a>
+    </p>
+    <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=u-tad&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</footer>
+
+</body>
+</html>

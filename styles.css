@@ -1,0 +1,185 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 0.875rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.7rem;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info h1,
+.header-info p {
+    margin: 0;
+}
+
+.header img {
+    max-width: 6.25rem;
+    height: auto;
+}
+
+/* Main content */
+.main-content {
+    padding: 1.25rem;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section h2 {
+    font-size: 1rem;
+}
+
+/* Agenda table */
+.agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.agenda-table, .agenda-table th, .agenda-table td {
+    border: 1px solid #ddd;
+}
+
+.agenda-table th, .agenda-table td {
+    padding: 0.625rem;
+    text-align: left;
+}
+
+.agenda-table th {
+    background-color: #004d99;
+    color: white;
+}
+
+.agenda-table .session-title:hover {
+    background-color: #a8c8e3;
+    transition: background-color 0.5s;
+}
+
+/* Form */
+.form-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+}
+.form-container select option {
+    cursor: pointer;
+}
+
+.form-container select option:hover {
+    background-color: #a8c8e3;
+    transition: background-color 0.5s;
+}
+
+.form-container input, .form-container select, .form-container button {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 0.3125rem 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Small devices */
+@media (min-width: 481px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .header {
+        font-size: 0.9rem;
+    }
+
+    .header img {
+        max-width: 9.375rem;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    .agenda-table, .agenda-table th, .agenda-table td {
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        font-size: 0.875rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) { 
+    body {
+        font-size: 1.125rem;
+    }
+
+    .header {
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+
+    .agenda-table, .agenda-table th, .agenda-table td {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        flex-direction: row;
+        padding: 0.5rem 12rem;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        padding: 2rem 12rem;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+
+    .agenda-table, .agenda-table th, .agenda-table td {
+        font-size: 1rem;
+    }
+}
