@@ -100,6 +100,14 @@ body {
     box-sizing: border-box;
 }
 
+.form-container button {
+    cursor: pointer;
+}
+.form-container button:hover {
+    background: #a8c8e3;
+    transition: background-color 0.5s;
+}
+
 /* Footer */
 .footer {
     background-color: #004d99;
@@ -111,6 +119,12 @@ body {
 .footer a {
     color: white;
     text-decoration: none;
+    text-decoration: underline;
+    color: cadetblue;
+}
+.footer a:hover {
+    color: #a8c8e3;
+    transition: color 0.5s;
 }
 
 /* Small devices */
